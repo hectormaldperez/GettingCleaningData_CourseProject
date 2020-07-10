@@ -62,7 +62,7 @@ names(merged)<-temp
 names(merged)
 
 ####5####
-final<-merged%>%gather(varible, value,-activity,-subject)%>% group_by(activity,subject)%>% summarise(mean=mean(value)) #its summarise not summarize 
+final<-merged%>%gather(variable, value,-activity,-subject)%>% group_by(activity,subject,variable)%>% summarise(mean=mean(value)) #its summarise not summarize 
 write.table(final, "tidy_ucr_data.txt", row.name=FALSE)
 #in plyr it was summarize, in dplyr its summarise 
 
