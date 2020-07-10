@@ -1,6 +1,6 @@
 # GettingCleaningData_CourseProject
 
-#Load the following packages:
+#Load the following packages: 
 library(downloader)
 library(dplyr)
 library(tidyr)
